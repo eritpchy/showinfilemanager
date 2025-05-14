@@ -3,7 +3,7 @@ requires = ["hatchling", "hatch-argparse-manpage"]
 build-backend = "hatchling.build"
 
 [project]
-name = "show-in-file-manager"
+name = "je-showinfilemanager"
 authors = [{name = "Damon Lynch", email = "damonlynch@gmail.com"}]
 description = "Open the system file manager and select files in it"
 classifiers = [
@@ -38,7 +38,7 @@ Homepage = "https://github.com/damonlynch/showinfilemanager"
 Issues = "https://github.com/damonlynch/showinfilemanager/issues"
 
 [project.scripts]
-showinfilemanager = "showinfm.showinfm:main"
+je-showinfilemanager = "showinfm.showinfm:main"
 
 [tool.hatch.version]
 path = "src/showinfm/__about__.py"
@@ -52,7 +52,6 @@ packages = ["src/showinfm"]
 [tool.hatch.build.hooks.argparse-manpage]
 include-url = false
 manpages = [
-    "man/showinfilemanager.1:function=get_parser:pyfile=src/showinfm/argumentsparse.py:manual_title=General Commands Manual",
 ]
 
 [tool.ruff]
